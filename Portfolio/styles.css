@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  a {
+    color: #00ffcc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #00ffcc;
+  }
+  
+  /* Home Section */
+  #home {
+    padding: 50px 0;
+  }
+  
+  .split-screen {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .split-screen .left, .split-screen .right {
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .split-screen .left {
+    background: url('https://source.unsplash.com/800x600/?server,rack') no-repeat center center/cover;
+  }
+  
+  .split-screen .right {
+    background: url('https://source.unsplash.com/800x600/?cybersecurity,code') no-repeat center center/cover;
+  }
+  
+  .split-screen .left:hover, .split-screen .right:hover {
+    transform: scale(1.05);
+  }
+  
+  /* About Me Section */
+  #about {
+    padding: 50px 0;
+  }
+  
+  .bio-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .bio-toggle button {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .bio {
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+    margin-top: 20px;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 0;
+  }
+  
+  .project-timeline {
+    margin-top: 20px;
+  }
+  
+  .timeline .event {
+    background: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00ffcc;
+  }
+  
+  .coming-soon {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    border-left: 5px solid #ffcc00;
+  }
+  
+  /* Skills Section */
+  #skills {
+    padding: 50px 0;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-category {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    padding: 50px 0;
+  }
+  
+  .testimonial-carousel {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    border-left: 5px solid #ff00cc;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    border: 1px solid #00ffcc;
+    background: #333;
+    color: #fff;
+  }
+  
+  form button {
+    background: #00ffcc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* Footer */
+  footer {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+  }
