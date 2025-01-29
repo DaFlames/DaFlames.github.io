@@ -100,11 +100,11 @@ body {
   }
   
   .it-hero {
-    background: url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+    background: url('images/it-hero.jpg') no-repeat center center/cover;
   }
   
   .cyber-hero {
-    background: url('https://source.unsplash.com/1600x900/?cybersecurity,hacking') no-repeat center center/cover;
+    background: url('images/cyber-hero.jpg') no-repeat center center/cover;
   }
   
   /* About Me Section */
