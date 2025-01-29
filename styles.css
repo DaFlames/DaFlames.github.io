@@ -57,17 +57,35 @@ body {
   
   .split-screen .left, .split-screen .right {
     flex: 1;
-    padding: 20px;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
   
-  .split-screen .left {
-    background: url('https://source.unsplash.com/800x600/?server,rack') no-repeat center center/cover;
+  .split-screen .left img, .split-screen .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
-  .split-screen .right {
-    background: url('https://source.unsplash.com/800x600/?cybersecurity,code') no-repeat center center/cover;
+  .split-screen .left .overlay, .split-screen .right .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  .split-screen .left:hover .overlay, .split-screen .right:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
   }
   
   .split-screen .left:hover, .split-screen .right:hover {
